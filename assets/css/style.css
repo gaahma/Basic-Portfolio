@@ -1,0 +1,33 @@
+#boxed-header {
+	color: #fff;
+	background-color: #4aaaa5;
+	padding: 20px;
+	width: 18%;
+	text-align: center;
+}
+
+h1, h3 {
+	color: #4aaaa5;
+}
+
+nav {
+	color: #ccc;
+}
+
+.content-wrapper {
+	background-image: url("assets/images/ep_naturalwhite.png");
+
+}
+.project-title {
+
+}
+
+
+
+footer {
+	background-color: #666666;
+	color: #ffffff;
+	margin: 0;
+	padding: 30px;
+	padding-left: 66.6%;
+}
