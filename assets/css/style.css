@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+.site-fonts {
+
+}
+
 html, body {  /* necessary for the footer to stay at the bottom */
 	height: 100%;
 	margin: 0;
@@ -75,14 +79,14 @@ h1, h3 {
 
 .content-wrapper {
 	padding: 20px 20px;
-	padding-bottom: 120px;  /* Height of the footer + 60 */
+	padding-bottom: 120px;  /* Height of the footer + 60 for good measure*/
 	clear: both;	
 }
 
 .content {
 	width: 650px;
 	min-height: 350px;
-	margin-left: 15%;  /* I know I know... it's supposed to be centered... this looks better. */
+	margin-left: 15%;  /* I know I know... it's supposed to be centered.  This looks better. */
 	background-color: #fff;
 	position: relative;
 	border: solid;
@@ -90,7 +94,7 @@ h1, h3 {
 }
 .about-me {
 	float: left;
-	margin: 10px;
+	margin: 20px;
 }
 
 p {
@@ -121,9 +125,10 @@ form {
 input, textarea {
 	border-color: #ddd;
 	line-height: 150%;
+
 }
 
-input[type=submit] {
+input[type=submit], {
 	background-color: #4aaaa5;
 	padding: 10px 20px;
 	font-size: 16px;
