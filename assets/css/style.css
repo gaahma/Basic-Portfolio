@@ -1,13 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {  /* necessary for the footer to stay at the bottom */
 	height: 100%;
 	margin: 0;
 	padding: 0;
-}
-header {
-	height: 100px;
-	background-color: #fff;
-	position: relative;
-	margin: 0;
 }
 
 body {
@@ -18,9 +16,11 @@ body {
 	position: relative;
 }
 
-.container {
-	min-height: 100%;
+header {
+	height: 100px;
+	background-color: #fff;
 	position: relative;
+	margin: 0;
 }
 
 hr {
@@ -28,6 +28,10 @@ hr {
 	height: 3px;
 	background-color: #ddd;
 	border: none;	
+}
+.container {
+	min-height: 100%;
+	position: relative;
 }
 
 #boxed-header {
@@ -46,13 +50,14 @@ hr {
 	width: 50px;
 	height: 50px;
 }
+/*
 nav {
 	float: right;
 	color: #ccc;
 	margin: 20px;
 	margin-top: 40px;
 }
-
+*/
 h1, h3 {
 	color: #4aaaa5;
 	font-family: Georgia, Times, "New Times Roman", serif;
@@ -76,27 +81,21 @@ h1, h3 {
 
 .content {
 	width: 650px;
-	margin: 0 auto;
+	min-height: 350px;
+	margin-left: 15%;  /* I know I know... it's supposed to be centered... this looks better. */
 	background-color: #fff;
 	position: relative;
 	border: solid;
 	border-color: #ddd;
 }
-
-
-
-.project-title {
-
-}
-
 .about-me {
 	float: left;
 	margin: 10px;
-	
 }
 
 p {
 	margin: 20px;
+	color: #777777;
 }
 
 .connect {
@@ -104,6 +103,7 @@ p {
 	border: solid;
 	border-color: #ddd;
 	background-color: #fff;
+	margin-right: 5%;
 	float: right;
 }
 
@@ -112,11 +112,61 @@ a.nav {
 	color: #ccc;
 	float: right;
 	margin: 20px;
-
 }
 
 form {
 	padding: 20px;
+}
+
+input, textarea {
+	border-color: #ddd;
+	line-height: 150%;
+}
+
+input[type=submit] {
+	background-color: #4aaaa5;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	border: none;	
+}
+
+.project-container {
+	width: 250px;
+	height: 167px;
+	margin: 30px 36px 30px 36px;
+	float: left;	
+}
+
+.project {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+}
+
+.project-label {
+	padding: 10px 10px;
+	background-color: #4aaaa5;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 15px;	
+}
+
+/* Height and width set to 167 and 250 for a 2:3 ratio.  Images with approximately that ratio were more plentiful*/
+.project-image {
+	width: auto;
+	width: 250px;    
+	height: auto;
+	height: 167px;
+}
+
+.clear{
+	clear: both;
 }
 
 footer {
@@ -124,14 +174,13 @@ footer {
 	color: #ffffff;
 	margin: 0;
 	margin-top: 20px;
-	padding-top: 30px;
+	padding-top: 20px;
 	height: 60px;
 	width: 100%;
 	text-align: center;
+	border-top-style: solid;
+	border-top-width: 5px;
+	border-color: #4aaaa5;
 	position: absolute;
 	bottom: 0;	
-}
-
-.clear{
-	clear: both;
 }
