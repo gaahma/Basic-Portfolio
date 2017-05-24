@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-.site-fonts {
-
-}
-
 html, body {  /* necessary for the footer to stay at the bottom */
 	height: 100%;
 	margin: 0;
@@ -27,15 +23,22 @@ header {
 	margin: 0;
 }
 
+h1, h3 {
+	color: #4aaaa5;
+	font-family: Georgia, Times, "New Times Roman", serif;
+	margin-left: 20px;
+}
+
 hr {
 	margin: 20px;
 	height: 3px;
 	background-color: #ddd;
 	border: none;	
 }
-.container {
-	min-height: 100%;
-	position: relative;
+
+p {
+	margin: 20px;
+	color: #777777;
 }
 
 #boxed-header {
@@ -54,19 +57,6 @@ hr {
 	width: 50px;
 	height: 50px;
 }
-/*
-nav {
-	float: right;
-	color: #ccc;
-	margin: 20px;
-	margin-top: 40px;
-}
-*/
-h1, h3 {
-	color: #4aaaa5;
-	font-family: Georgia, Times, "New Times Roman", serif;
-	margin-left: 20px;
-}
 
 .icon {
 	float: left;
@@ -75,6 +65,11 @@ h1, h3 {
 
 #iconBar {
 	margin-left: 30px;
+}
+
+.container {
+	min-height: 100%;
+	position: relative;
 }
 
 .content-wrapper {
@@ -95,11 +90,6 @@ h1, h3 {
 .about-me {
 	float: left;
 	margin: 20px;
-}
-
-p {
-	margin: 20px;
-	color: #777777;
 }
 
 .connect {
